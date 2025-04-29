@@ -1,0 +1,38 @@
+.borel-regular {
+    font-family: "Borel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.sour-gummy {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: bold;
+    font-variation-settings:
+      "wdth" 200;
+}
+
+body {
+    background-color: rgba(255, 0, 251, 0.42);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 98vh;
+}
+
+h1 { 
+    font-size: 5vh;
+    font-family: "Borel";
+}
+
+p {
+    font-size: 3vh;
+    font-family: "Sour Gummy";
+}
