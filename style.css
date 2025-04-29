@@ -28,11 +28,22 @@ div {
 }
 
 h1 { 
-    font-size: 5vh;
+    font-size: 7vw;
     font-family: "Borel";
 }
 
 p {
-    font-size: 3vh;
+    font-size: 4vw;
     font-family: "Sour Gummy";
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+       font-size: 9vw;
+    }
+
+
+    p {
+        font-size: 6vw;
+    }
 }
