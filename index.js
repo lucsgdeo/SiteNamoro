@@ -4,6 +4,19 @@ const dataEmDias = Math.floor((data1 - data2)/86400000);
 
 const meses = Math.floor(dataEmDias / 30);
 const dias = dataEmDias % 30;
-const resultadoFinal = `${meses} meses e ${dias} dias`;
+const calculoTempo = document.getElementById("calculoTempo");
+let resultadoFinal = "";
 
-document.getElementById("calculoTempo").innerHTML = resultadoFinal;
+
+if (dias > 0) resultadoFinal = `${meses} meses e ${dias} dias`;
+else {
+    resultadoFinal = `Parabéns!! Hoje nós fazemos ${meses} meses de namoro.`;
+    const titulo = document.getElementById("titulo");
+    titulo.hidden = true;
+
+    calculoTempo.style.fontWeight = 600;
+    calculoTempo.style.fontSize = "8vw";
+    calculoTempo.style.margin = "12vw";
+}
+
+calculoTempo.innerHTML = resultadoFinal;
