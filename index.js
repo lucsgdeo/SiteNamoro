@@ -7,7 +7,10 @@ const dias = retornaDias(data1, data2);
 const calculoTempo = document.getElementById("calculoTempo");
 let resultadoFinal = "";
 
-if (data1.getDate() != 5) resultadoFinal = `${meses} meses e ${dias} dias`;
+if (data1.getDate() != 5) {
+    if(dias > 1) resultadoFinal = `${meses} meses e ${dias} dias`;
+    else resultadoFinal = `${meses} meses e ${dias} dia`;
+} 
 else {
     resultadoFinal = `Parabéns!! Hoje nós fazemos ${meses} meses de namoro.`;
     const titulo = document.getElementById("titulo");
